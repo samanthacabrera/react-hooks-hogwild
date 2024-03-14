@@ -9,10 +9,10 @@ function HogTile({ hog }) {
   };
 
   return (
-    <div className="hog-tile" onClick={handleClick}>
+    <div className="ui card" onClick={handleClick}>
       <img src={hog.image} alt={hog.name} />
           <h2>{hog.name}</h2>
-        {/*If showDetails===true, then display hogDetails as a child of HogTile*/}
+        {/*If showDetails is true, then display hogDetails as a child of HogTile*/}
       {showDetails && <HogDetails hog={hog} />}
     </div>
   );
